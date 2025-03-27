@@ -72,6 +72,7 @@ for bird in query:
 				link=requests.get(images[a])
 				f.write(link.content)
 				print(a, "repeated")
-		except InvalidSchema:
+		except requests.exceptions.InvalidSchema:
+			print("skipped invalid link")
 			pass
 	os.chdir(currentdir)
