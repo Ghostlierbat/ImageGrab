@@ -51,10 +51,10 @@ for bird in query:
 		request(i, bird, images)
 		
 	for i in images:
-		if os.path.isfile("image"+str(a)+".png") != True:
-			f = open("image"+str(a)+".png", "xb")
+		if os.path.isfile("image"+str(a)+".jpg") != True:
+			f = open("image"+str(a)+".jpg", "xb")
 		else:
-			f = open("image"+str(a)+".png", "wb")
+			f = open("image"+str(a)+".jpg", "wb")
 		try:
 			print(os.getcwd())
 			print(images[a])
